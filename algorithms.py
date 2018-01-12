@@ -31,3 +31,30 @@ def test1():
 	print(xo(xxoxxxooxCxoxoxxoxoooxxoxAoxxEoxoxbxoxoxoxfoxoxxxooxxooooxdox))
 	print(xo(xmxxoGrxdoxxxxoxooooxooxAoSCJooLoxNooxoUfxxpQxtEhkoxooxbx))
 	print(xo(obXXCXXooXooXoXooXXooooXXXooXXoXXXoXXooXooXXoooXXXXAooooX))
+
+
+# 01-10-18
+# Enter an (unsigned) integer
+# convert to binary
+# and return the number of 1's
+# in the binary representation.
+
+def countBits(n):
+    binaryRep = ""
+    while n > 0:
+        newDigit = int(round(n % 2))
+        binaryRep += str(newDigit)
+        n = n / 2
+    actualB = binaryRep
+    counter = 0
+    for number in actualB:
+        if int(number) == 1:
+            counter +=1
+    return counter
+
+# tests
+print(countBits(0)) #0
+print(countBits(4)) # 1
+print(countBits(9)) #2
+print(countBits(10)) #2
+print(countBits(1234)) # 3
