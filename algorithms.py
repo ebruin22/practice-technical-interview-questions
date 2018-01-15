@@ -58,3 +58,21 @@ print(countBits(4)) # 1
 print(countBits(9)) #2
 print(countBits(10)) #2
 print(countBits(1234)) # 3
+
+
+# 01-14-2018
+# Take an integer n (n >= 0) and a digit d (0 <= d <= 9) 
+# as an integer. Square all numbers k (0 <= k <= n) 
+# between 0 and n. Count the numbers of digits d used
+# in the writing of all the k**2. Call nb_dig 
+# (or nbDig or ...) the function taking n 
+# and d as parameters and returning this count.
+
+# Requirements
+# 1. get all numbers squared between 0 and n or k's
+# 2. Compare d to each squared k number to see if d in the number
+# 3. Count the number of times d appears in all the k's
+
+
+def nb_dig(n, d):
+    # your code
