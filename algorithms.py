@@ -76,3 +76,12 @@ print(countBits(1234)) # 3
 
 def nb_dig(n, d):
     # your code
+
+
+# 01-16-18
+# For building the encrypted string:
+# Take every 2nd char from the string,
+# then the other chars, that are not 
+# every 2nd char, and concat them as new String.
+# Do this n times!
+
